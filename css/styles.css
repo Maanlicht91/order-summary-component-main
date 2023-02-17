@@ -1,0 +1,150 @@
+:root {
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 400px;
+    height: 620px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+article:nth-child(2) {
+    margin: 0 2rem;
+}
+
+article:nth-child(3) {
+    display: flex;
+    margin-left: 2.7rem;
+    background-color: var(--very-pale-blue);
+    width: 320px;
+    height: 80px;
+    border-radius: 0.5rem;
+}
+
+article:nth-child(3) img {
+    width: 40px;
+    height: 40px;
+    margin: 1.3rem 0.5rem 0 1rem;
+}
+h1{
+    font-weight: 900;
+    color: var(--dark-blue);
+    padding-bottom: 1rem;
+}
+
+article:nth-child(3) p {
+    margin: 1rem 6.3rem 0 0.5rem;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+article:nth-child(3) div a {
+    color: var(--bright-blue);
+    font-size: 12px;
+    position: relative;
+    top:2rem;  
+    font-weight: 700;   
+}
+
+article:nth-child(3) div a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+div:last-child button {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    width: 310px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 0;
+    margin: 0 2rem 2rem 2.9rem;
+    box-shadow: 5px 10px 18px var(--pale-blue);
+    font-size: 12px;
+
+}
+div:last-child button:hover {
+    opacity: 0.7;
+} 
+
+div:last-child a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+div:last-child a:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+strong {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+
+p {
+    color: var(--desaturated-blue);
+   
+}
+
+
+.illustration-pic {
+    width: 400px;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0 ;
+}
+.attribution { 
+    color: var(--white);
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+    font-size: 0.75rem; 
+    text-align: center; 
+    line-height: 20px;
+}
+.attribution a { 
+    text-decoration: none;
+    color: var(--bright-blue); 
+}
+
+@media (max-width:640px) {
+    body {
+        background: url(/images/pattern-background-mobile.svg) no-repeat;
+        background-size: 100%;
+        background-color: var(--pale-blue);
+    }
+}
